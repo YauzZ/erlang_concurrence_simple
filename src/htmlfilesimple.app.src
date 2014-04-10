@@ -1,0 +1,17 @@
+%% Feel free to use, reuse and abuse the code in this file.
+
+{application, htmlfilesimple, [
+	{description, "htmlfile test server"},
+	{vsn, "0.1.0"},
+	{modules, []},
+	{registered, [htmlfile_tes_sup]},
+	{applications, [
+		kernel,
+		stdlib,
+		crypto,
+		ranch,
+		cowboy
+	]},
+	{mod, {htmlfilesimple, []}},
+	{env, []}
+]}.
